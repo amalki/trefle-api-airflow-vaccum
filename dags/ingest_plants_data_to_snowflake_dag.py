@@ -42,13 +42,14 @@ with DAG(
         dag=dag,
     )
 
+    # upload all written files to s3
     task_upload_local_csv_files_to_s3 = PythonOperator(
         task_id="upload_local_csv_files_to_s3",
         python_callable=multiple_upload_to_s3,
         dag=dag,
     )
 
-    # create or replace stage ??? or not ??
+    # create or replace stage
     task_create_s3_snowflake_stage = SnowflakeOperator(
         task_id="create_s3_snowflake_stage",
         sql="./sql/create_stage_s3.sql",
@@ -57,7 +58,7 @@ with DAG(
         dag=dag,
     )
 
-    # create or replace table in snowflake if not exist
+    # create or replace table in snowflake
     task_create_snowflake_table = SnowflakeOperator(
         task_id="create_snowflake_table",
         sql="./sql/create_table_plants.sql",
