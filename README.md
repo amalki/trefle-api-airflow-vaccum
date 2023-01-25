@@ -15,19 +15,23 @@ This is a project that showcase how to vaccum data from the trefle api using air
 
 ### Setup
 
-1. Create image extension:
+1. Prepare folders and config:
+```sh
+make prepare-install
+```
+2. Create image extension:
 ```sh
 make build-image-airflow
 ```
-2. Initiate airflow database:
+3. Initiate airflow database:
 ```sh
 make init-airflow
 ```
-3. Start airflow:
+4. Start airflow:
 ```sh
 make start-airflow
 ```
-4. Define the needed airflow connection and variables
-5. Run the dag ingest_plants_data_to_snowflake_dag 
+5. Define the needed airflow connection and variables
+6. Run the dag ingest_plants_data_to_snowflake_dag 
 
 Other make commands are also available.
