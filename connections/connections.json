@@ -1,0 +1,15 @@
+{
+    "AIRFLOW_CONN_FILESENSOR_CONNECTION": {
+        "conn_type": "fs",
+        "login": "",
+        "password": "",
+        "host": "",
+        "port": "",
+        "schema": "",
+        "is_encrypted": "False",
+        "is_extra_encrypted": "False",
+        "extra": {
+            "path": "/opt/GCP"
+        }
+    }
+}
