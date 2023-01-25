@@ -1,5 +1,5 @@
 prepare-install:
-	mkdir -p ./dags ./logs ./plugins
+	mkdir -p ./dags ./logs ./plugins ./data
 	echo "AIRFLOW_UID=50000" > .env
 
 
