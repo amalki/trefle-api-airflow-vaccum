@@ -3,7 +3,7 @@
 <!-- ABOUT THE PROJECT -->
 ### About the repo
 
-This is a project that showcase how to vaccum data from the trefle api using airflow as an orchestrator.
+This is a project that showcases how to vaccum data from the trefle api using airflow as an orchestrator.
 
 ### Prerequisites
 
